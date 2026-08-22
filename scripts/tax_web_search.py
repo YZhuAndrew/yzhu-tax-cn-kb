@@ -11,6 +11,7 @@ Usage:
 """
 
 import argparse
+import html
 import json
 import re
 import sys
@@ -33,6 +34,11 @@ HEADERS = {
 }
 TIMEOUT = 15
 
+# Keep policy-oriented channels and exclude news, media and local activity.
+POLICY_CHANNEL_KEYWORDS = (
+    "政策公告", "政策法规", "政策解读", "税费优惠政策", "税收优惠政策",
+)
+
 
 def search_chinatax(keyword: str, page: int = 1, size: int = 10) -> dict:
     """
@@ -40,114 +46,94 @@ def search_chinatax(keyword: str, page: int = 1, size: int = 10) -> dict:
 
     Returns a dict with the same structure as tax_search.search_tax().
     """
-    from urllib.parse import quote
-
-    # chinatax uses WAS5 search: /was5/web/search
-    params = {
-        "searchword": keyword,
-        "keyword": keyword,
-        "perpage": str(size),
-        "page": str(page),
-        "orderby": "-crtime",  # newest first
-    }
-
-    url = f"{SEARCH_URL}?{'&'.join(f'{k}={quote(str(v))}' for k, v in params.items())}"
-    results = []
-
     try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
-        if r.status_code != 200:
-            # Fallback: try Baidu site-search (some chinatax pages use this)
-            return _baidu_site_search(keyword, size)
+        # The former WAS5 endpoint now returns 404. The current search page
+        # submits form data to /search5/search/s and returns JSON.
+        search_url = f"{BASE_URL}/search5/search/s"
+        payload = {
+            "siteCode": "bm29000002",
+            "searchWord": keyword,
+            "column": "全部",
+            "uc": "1",
+            "left_right_index": "0",
+            "pageSize": str(max(size, 1)),
+            "pageNum": str(max(page - 1, 0)),
+        }
+        filtered_rows = []
+        raw_total = 0
+        raw_page_size = 10
+        target_count = max(page, 1) * max(size, 1)
+        page_num = 0
+        while len(filtered_rows) < target_count:
+            payload["pageNum"] = str(page_num)
+            r = requests.post(search_url, data=payload, headers=HEADERS,
+                               timeout=TIMEOUT)
+            if r.status_code != 200:
+                # Fallback: try Baidu site-search (some chinatax pages use this)
+                return _baidu_site_search(keyword, size)
 
-        html = r.text
-
-        # --- Tolerant HTML parsing ---
-        # Strategy: extract all <a> tags with href containing "chinatax.gov.cn"
-        # that appear in search result blocks. Uses regex to survive site redesigns.
-
-        # Pattern 1: Search result links (typical format)
-        link_pattern = re.compile(
-            r'<a[^>]*href="([^"]*chinatax\.gov\.cn[^"]*)"[^>]*>'
-            r'(.*?)</a>',
-            re.DOTALL | re.IGNORECASE
-        )
-        # Pattern 2: Date extraction (various formats)
-        date_pattern = re.compile(
-            r'(\d{4}[-/年]\d{1,2}[-/月]\d{1,2}[日]?)'
-        )
-
-        # Extract result blocks — typically <li> or <div class="result">
-        blocks = re.findall(
-            r'<(?:li|div)[^>]*(?:class="[^"]*result[^"]*"|class="[^"]*item[^"]*")[^>]*>'
-            r'(.*?)</(?:li|div)>',
-            html, re.DOTALL | re.IGNORECASE
-        )
-
-        if not blocks:
-            # Fallback: look for any <li> or <div> with links
-            blocks = re.findall(
-                r'<(?:li|div)[^>]*>(.*?)</(?:li|div)>',
-                html, re.DOTALL
-            )
-            # Filter to blocks containing chinatax.gov.cn links
-            blocks = [b for b in blocks if "chinatax.gov.cn" in b]
-
-        seen_urls = set()
-        for block in blocks:
-            links = link_pattern.findall(block)
-            for href, title_raw in links:
-                href = urljoin(BASE_URL, href.strip())
-                if href in seen_urls:
-                    continue
-                seen_urls.add(href)
-
-                # Clean title — remove HTML tags
-                title = re.sub(r"<[^>]+>", "", title_raw).strip()
-                if len(title) < 5:
-                    continue
-
-                # Extract date
-                date_match = date_pattern.search(block)
-                date_str = date_match.group(1) if date_match else ""
-                date_str = date_str.replace("年", "-").replace("月", "-").replace("日", "")
-
-                # Extract document number (e.g., 国家税务总局公告2024年第1号)
-                doc_num = ""
-                doc_match = re.search(
-                    r'(国家税务总局公告\d{4}年第\d+号|'
-                    r'财税\[\d{4}\]\d+号|'
-                    r'税总发\[\d{4}\]\d+号|'
-                    r'财政部税务总局\d{4}年第\d+号)',
-                    block
-                )
-                if doc_match:
-                    doc_num = doc_match.group(1)
-
-                results.append({
-                    "title": title,
-                    "url": href,
-                    "date": date_str,
-                    "document_number": doc_num,
-                    "source": "chinatax.gov.cn",
-                })
-
-                if len(results) >= size:
-                    break
-            if len(results) >= size:
+            data = r.json()
+            search_result = data.get("searchResultAll", {})
+            rows = search_result.get("searchTotal", [])
+            raw_total = search_result.get("total", raw_total)
+            filtered_rows.extend(item for item in rows if _is_policy_result(item))
+            if not rows or (page_num + 1) * raw_page_size >= raw_total:
                 break
+            page_num += 1
+
+        filtered_rows = filtered_rows[(max(page, 1) - 1) * max(size, 1):]
+        results = []
+        for item in filtered_rows[:size]:
+            gov_doc = item.get("govDoc") or {}
+            title = _clean_text(item.get("title", ""))
+            if not title:
+                continue
+            results.append({
+                "id": item.get("id", ""),
+                "title": title,
+                "url": item.get("url") or item.get("snapshotUrl", ""),
+                "date": item.get("pubDate", ""),
+                "document_number": (
+                    gov_doc.get("docNo") or gov_doc.get("docNum") or ""
+                ),
+                "source": "chinatax.gov.cn",
+                "snippet": _clean_text(item.get("shortContent", ""))[:200],
+                "column": _clean_text(item.get("column", "")),
+                "label": _clean_text(item.get("label", "")),
+                "channel": _clean_text(item.get("channel_levels_names", "")),
+            })
+
+        total = len(results)
 
     except requests.RequestException as e:
         return _empty_result(keyword, str(e))
+    except (ValueError, TypeError, AttributeError) as e:
+        return _empty_result(keyword, f"Invalid chinatax response: {e}")
 
     return {
         "keyword": keyword,
-        "total": len(results),
+        "total": total,
         "results": results,
         "searched_at": time.strftime("%Y-%m-%d %H:%M:%S"),
         "source": "chinatax.gov.cn",
+        "raw_total": raw_total,
         "_from_cache": False,
     }
+
+
+def _clean_text(value: str) -> str:
+    """Remove result markup and decode HTML entities from search fields."""
+    text = re.sub(r"<[^>]+>", "", value or "")
+    return html.unescape(text).strip()
+
+
+def _is_policy_result(item: dict) -> bool:
+    """Return whether a tax-office result belongs to a policy channel."""
+    channel_text = " ".join(
+        _clean_text(item.get(field, ""))
+        for field in ("channel_levels_names", "column", "label")
+    )
+    return any(keyword in channel_text for keyword in POLICY_CHANNEL_KEYWORDS)
 
 
 def _empty_result(keyword: str, error: str = "") -> dict:

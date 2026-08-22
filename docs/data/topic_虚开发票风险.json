@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03 15:34:24",
+  "updated": "2026-08-22 17:47:41",
   "keyword": "虚开发票 风险",
   "type": "虚开发票风险",
   "scope": "fulltext",
@@ -61,7 +61,7 @@
     },
     {
       "id": "ff8081818a1cb546018a6e362a746d5a",
-      "title": "中华人民共和国<em class='highlight'>发票管理办法",
+      "title": "中华人民共和国发票管理办法",
       "publish_date": "2023-07-20",
       "effective_date": "2023-07-20",
       "status_code": 3,
@@ -109,15 +109,6 @@
       "title": "北京市优化营商环境条例",
       "publish_date": "2024-11-29",
       "effective_date": "2024-11-29",
-      "status_code": 3,
-      "issuing_authority": "北京市人民代表大会常务委员会",
-      "category": "地方法规"
-    },
-    {
-      "id": "ff8080816f135f46016f17de569d09b3",
-      "title": "北京市实施《中华人民共和国节约能源法》办法",
-      "publish_date": "2019-11-27",
-      "effective_date": "2019-11-27",
       "status_code": 3,
       "issuing_authority": "北京市人民代表大会常务委员会",
       "category": "地方法规"
@@ -271,6 +262,15 @@
       "title": "辽宁省农作物种子管理条例",
       "publish_date": "2023-09-27",
       "effective_date": "2023-12-01",
+      "status_code": 3,
+      "issuing_authority": "辽宁省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff80818180e0a44101811403ef750ecf",
+      "title": "辽宁省消费者权益保护条例",
+      "publish_date": "2022-04-21",
+      "effective_date": "2022-04-21",
       "status_code": 3,
       "issuing_authority": "辽宁省人民代表大会常务委员会",
       "category": "地方法规"

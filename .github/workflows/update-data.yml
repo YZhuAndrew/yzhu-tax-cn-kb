@@ -6,9 +6,14 @@ on:
     - cron: '0 2 * * *'   # 2am UTC daily
   workflow_dispatch:
 
+concurrency:
+  group: update-tax-data
+  cancel-in-progress: true
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -20,7 +25,14 @@ jobs:
         run: pip install requests urllib3
 
       - name: Fetch tax data
+        # Exits 1 (blocking the commit below) only if every search fails;
+        # partial failures reuse the previous run's data instead of wiping it.
         run: python .github/scripts/fetch_tax_data.py
+
+      - name: Build law version chains
+        # 20 tax-law families: search all effect statuses, verify repeal
+        # clauses from law DOCX text, write docs/data/versions.json.
+        run: python scripts/tax_versions.py --build --out docs/data/versions.json
 
       - name: Commit & push if changed
         run: |
