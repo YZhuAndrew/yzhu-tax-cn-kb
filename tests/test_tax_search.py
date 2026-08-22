@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""End-to-end tests for tax-policy-search skill."""
+"""End-to-end tests for yzhu-tax-cn-kb skill."""
 import json
 import os
 import sys
@@ -186,7 +186,7 @@ def test_two_phase():
 
 def main():
     print("=" * 60)
-    print("tax-policy-search: End-to-End Tests")
+    print("yzhu-tax-cn-kb: End-to-End Tests")
     print("=" * 60)
 
     tests = [

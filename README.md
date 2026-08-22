@@ -1,4 +1,4 @@
-# 财税政策实时搜索引擎 — 项目介绍
+# yzhu-tax-cn-kb — 财税政策实时搜索引擎（个人维护版）
 
 > **Tax Policy Real-Time Search** — 通过多源实时检索，为企业和个人提供权威、准确、最新的中国税收政策法规查询与解读服务。
 
@@ -306,7 +306,7 @@ GET /api/text/ff808181927b083b0193fd65a0eb02cb
 pip install flask requests urllib3
 
 # 2. 启动服务
-cd ~/.claude/skills/tax-policy-search
+cd ~/.claude/skills/yzhu-tax-cn-kb
 python scripts/tax_server.py
 
 # 3. 打开浏览器
@@ -352,7 +352,7 @@ Claude 将自动激活此 Skill，实时搜索 NPC 法规库后回答。
 ## 九、项目目录结构
 
 ```
-tax-policy-search/
+yzhu-tax-cn-kb/
 │
 ├── SKILL.md                        # AI Agent 操作手册（292行）
 │   ├── 触发词 + 核心原则
@@ -459,7 +459,7 @@ tax-policy-search/
 $ python tests/test_tax_search.py
 
 ============================================================
-tax-policy-search: End-to-End Tests
+yzhu-tax-cn-kb: End-to-End Tests
 ============================================================
 > Intent Detection          [7/7] ✅
 > Tax Type Resolution       [6/6] ✅

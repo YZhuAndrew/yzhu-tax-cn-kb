@@ -703,7 +703,7 @@ def api_health():
 if __name__ == "__main__":
     import sys
     sys.stdout.reconfigure(encoding='utf-8')
-    print("\n  [tax-policy-search] API Server")
+    print("\n  [yzhu-tax-cn-kb] API Server")
     print("  http://localhost:5080")
     print("  POST /api/search")
     print("  GET  /api/text/<id>")
