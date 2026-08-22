@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>法规版本链与效力追踪</title>
+<style>
+:root{--bg:#fafafa;--card:#fff;--text:#111;--t2:#525252;--t3:#a3a3a3;--border:#e5e5e5;--primary:#dc2626;--plight:#fee2e2;--green:#059669;--gbg:#d1fae5;--yellow:#b45309;--ybg:#fef3c7;--red:#dc2626;--rbg:#fee2e2;--blue:#1d4ed8;--bbl:#dbeafe}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.hero{text-align:center;padding:36px 20px 24px;border-bottom:1px solid var(--border)}
+.hero h1{font-size:24px;font-weight:800;letter-spacing:6px}
+.hero p{font-size:12px;color:var(--t2);letter-spacing:1px;margin-top:6px}
+.hero a{color:var(--primary);text-decoration:none;font-size:12px}
+.hero a:hover{text-decoration:underline}
+.container{max-width:860px;margin:0 auto;padding:16px}
+.card{background:var(--card);border-radius:0;box-shadow:none;padding:18px 22px;margin-bottom:16px;border:1px solid var(--border)}
+.card h2{font-size:16px;margin-bottom:12px}
+.check-row{display:flex;gap:10px}
+.check-row input{flex:1;padding:11px 15px;border:2px solid var(--border);border-radius:8px;font-size:15px;outline:none}
+.check-row input:focus{border-color:var(--primary)}
+.check-row button{padding:11px 24px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+.check-row button:hover{background:#1e40af}
+.hint{font-size:11.5px;color:var(--t3);margin-top:8px}
+.verdict{margin-top:14px;padding:14px 16px;border-left:4px solid var(--border);background:var(--bg)}
+.verdict.v-effective{border-color:var(--green);background:var(--gbg)}
+.verdict.v-abolished{border-color:var(--red);background:var(--rbg)}
+.verdict.v-amended{border-color:var(--yellow);background:var(--ybg)}
+.verdict.v-pending{border-color:var(--blue);background:var(--bbl)}
+.verdict .v-head{font-size:16px;font-weight:700}
+.verdict .v-line{font-size:13px;margin-top:6px}
+.verdict .v-line a{color:var(--primary)}
+.verdict .clause{font-size:12px;color:var(--t2);margin-top:8px;padding:8px 10px;background:#ffffffcc;border-left:3px solid var(--t3)}
+.family-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+@media(max-width:600px){.family-grid{grid-template-columns:repeat(3,1fr)}}
+.family-grid button{padding:9px 4px;border:1px solid var(--border);border-radius:6px;background:var(--card);font-size:13px;font-weight:600;cursor:pointer;transition:all .12s}
+.family-grid button:hover{background:var(--plight);border-color:var(--primary)}
+.family-grid button.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.current-box{padding:14px 16px;border:1px solid var(--green);background:var(--gbg);margin-bottom:16px}
+.current-box .cb-label{font-size:11px;color:var(--green);font-weight:700;letter-spacing:1px}
+.current-box .cb-title{font-size:16px;font-weight:700;margin-top:2px}
+.current-box a{color:var(--text);text-decoration:none}
+.current-box a:hover{color:var(--primary)}
+.current-box .cb-meta{font-size:12px;color:var(--t2);margin-top:4px}
+.tl{list-style:none;border-left:2px solid var(--border);margin-left:8px;padding-left:20px}
+.tl li{position:relative;padding:10px 0 14px}
+.tl li::before{content:"";position:absolute;left:-26px;top:16px;width:10px;height:10px;border-radius:50%;background:var(--t3);border:2px solid var(--card)}
+.tl li.s3::before{background:var(--green)}
+.tl li.s1::before{background:var(--red)}
+.tl li.s2::before{background:var(--yellow)}
+.tl li.s4::before{background:var(--blue)}
+.tl .t-title{font-size:14.5px;font-weight:600}
+.tl .t-title a{color:var(--text);text-decoration:none}
+.tl .t-title a:hover{color:var(--primary)}
+.tl .t-meta{font-size:12px;color:var(--t2);margin-top:2px}
+.status-badge{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;margin-left:6px;vertical-align:1px}
+.s-effective{background:var(--gbg);color:var(--green)}.s-amended{background:var(--ybg);color:var(--yellow)}
+.s-abolished{background:var(--rbg);color:var(--red)}.s-pending{background:var(--bbl);color:var(--blue)}
+.edge{padding:10px 14px;border:1px dashed var(--border);margin-bottom:8px;font-size:13px;background:var(--card)}
+.edge .e-line{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.edge .e-arrow{color:var(--t3)}
+.edge .e-title{font-weight:600}
+.edge .e-title a{color:var(--text);text-decoration:none}
+.edge .e-title a:hover{color:var(--primary)}
+.basis{display:inline-flex;align-items:center;gap:3px;padding:1px 8px;border-radius:20px;font-size:10.5px;font-weight:600}
+.basis-text{background:var(--gbg);color:var(--green)}
+.basis-inferred{background:#f3f4f6;color:var(--t2)}
+.edge .clause{font-size:12px;color:var(--t2);margin-top:6px;padding-left:10px;border-left:3px solid var(--t3)}
+.data-note{font-size:11px;color:var(--t3);text-align:center;padding:8px;background:var(--card);border:1px solid var(--border);margin-bottom:16px}
+.data-note a{color:var(--primary)}
+.empty{color:var(--t2);font-size:13px;padding:20px 0;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>法规版本链</h1>
+  <p>20 个税种母法的演进时间线与效力追踪 · 废止/替代关系以法条原文为据</p>
+  <p style="margin-top:8px"><a href="index.html">← 返回政策搜索</a></p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>⚖️ 效力快查 —— 这部法规现在还能用吗?</h2>
+    <div class="check-row">
+      <input type="text" id="checkInput" placeholder="输入法规全名,如:中华人民共和国增值税暂行条例" onkeydown="if(event.key==='Enter')doCheck()">
+      <button onclick="doCheck()">查效力</button>
+    </div>
+    <div class="hint">示例:增值税暂行条例 / 进出口关税条例 / 印花税暂行条例 / 企业所得税法实施条例</div>
+    <div id="verdictBox"></div>
+  </div>
+
+  <div class="data-note" id="dataNote">数据加载中…</div>
+
+  <div class="card">
+    <h2>📚 税种版本时间线</h2>
+    <div class="family-grid" id="familyGrid"></div>
+  </div>
+
+  <div id="familyDetail"></div>
+
+</div>
+
+<script>
+const STATUS = {1:['已废止','s-abolished','🔴'],2:['已修改','s-amended','🟡'],3:['现行有效','s-effective','🟢'],4:['尚未生效','s-pending','🔵']};
+let DATA = null;
+
+function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
+function norm(t){return (t||'').replace(/中华人民共和国/g,'').replace(/[（(][^（）()]*[)）]\s*$/,'').trim()}
+function badge(sc){const s=STATUS[sc]||['未知','','❓'];return `<span class="status-badge ${s[1]}">${s[2]} ${s[0]}</span>`}
+
+async function init(){
+  try{
+    const r = await fetch('data/versions.json');
+    DATA = await r.json();
+    document.getElementById('dataNote').innerHTML =
+      `📅 版本链更新时间: ${DATA.updated} · <a href="https://flk.npc.gov.cn" target="_blank">数据源: NPC 国家法律法规数据库</a> · 每日自动更新 · 📄=废止条款文本确认,🔍=状态推断(待核验)`;
+    const grid = document.getElementById('familyGrid');
+    DATA.families.forEach(f=>{
+      const b = document.createElement('button');
+      b.textContent = f.base;
+      b.onclick = ()=>{ renderFamily(f); document.querySelectorAll('#familyGrid button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); };
+      grid.appendChild(b);
+    });
+  }catch(e){
+    document.getElementById('dataNote').textContent = '数据加载失败:' + e;
+  }
+}
+
+function doCheck(){
+  const q = document.getElementById('checkInput').value.trim();
+  const box = document.getElementById('verdictBox');
+  if(!q || !DATA){box.innerHTML='';return}
+  const qn = norm(q);
+  let rec=null, fam=null;
+  for(const f of DATA.families){
+    for(const r of f.timeline){
+      if(norm(r.title)===qn || r.title.includes(q)){rec=r;fam=f;break}
+    }
+    if(rec)break;
+  }
+  if(!rec){box.innerHTML=`<div class="verdict">❓ 未在 20 个税种族中找到「${esc(q)}」——本页只覆盖税种母法族;其他法规请用<a href="index.html">政策搜索</a>查询时效标注。</div>`;return}
+
+  const sc = rec.status_code, s = STATUS[sc];
+  const cls = {3:'v-effective',1:'v-abolished',2:'v-amended',4:'v-pending'}[sc]||'';
+  const verdictText = {3:'🟢 现行有效,可以引用',4:'🔵 尚未生效,注意施行日期',
+                       2:'🟡 已被修改,应查最新版本',1:'🔴 已废止,不可再引用'}[sc];
+  let html = `<div class="verdict ${cls}">
+    <div class="v-head">${verdictText}</div>
+    <div class="v-line"><b>${esc(rec.title)}</b>${badge(sc)} · 公布 ${rec.publish_date||'?'}${rec.effective_date?' · 施行 '+rec.effective_date:''} · ${esc(rec.issuing_authority||'')} · <a href="${rec.url}" target="_blank">官方库原文 ↗</a></div>`;
+  if(sc===1||sc===2){
+    const edge = fam.edges.find(e=>e.from_bbbs===rec.bbbs);
+    if(edge){
+      html += `<div class="v-line">↳ 替代版本:<b><a href="${edge.to_url}" target="_blank">${esc(edge.to)}</a></b>
+        ${edge.basis==='text'?'<span class="basis basis-text">📄 文本确认</span>':'<span class="basis basis-inferred">🔍 推断</span>'}
+        ${edge.effective_date?'(新法施行 '+edge.effective_date+')':''}</div>`;
+      if(edge.clause) html += `<div class="clause">条款依据:${esc(edge.clause)}</div>`;
+    }
+  }
+  if(fam.current && fam.current.title!==rec.title){
+    html += `<div class="v-line">↳ 本税种当前适用:<a href="#" onclick="event.preventDefault();document.getElementById('checkInput').value='${esc(fam.current.title)}';doCheck()">${esc(fam.current.title)}</a></div>`;
+  }
+  html += `</div>`;
+  box.innerHTML = html;
+}
+
+function renderFamily(f){
+  const detail = document.getElementById('familyDetail');
+  let html = `<div class="card"><h2>🧭 ${esc(f.base)} — 演进时间线</h2>`;
+  if(f.current){
+    const s = STATUS[f.current.status_code];
+    html += `<div class="current-box">
+      <div class="cb-label">当前适用版本</div>
+      <div class="cb-title"><a href="${f.current.url}" target="_blank">${esc(f.current.title)} ↗</a></div>
+      <div class="cb-meta">${s[2]} ${s[0]} · 公布 ${f.current.publish_date||'?'}${f.current.effective_date?' · 施行 '+f.current.effective_date:''}</div>
+    </div>`;
+  }
+  html += `<ul class="tl">`;
+  [...f.timeline].reverse().forEach(r=>{
+    html += `<li class="s${r.status_code}">
+      <div class="t-title"><a href="${r.url}" target="_blank">${esc(r.title)}</a>${badge(r.status_code)}</div>
+      <div class="t-meta">公布 ${r.publish_date||'?'}${r.effective_date?' · 施行 '+r.effective_date:''} · ${esc(r.issuing_authority||'')}${r.revision?' · '+esc(r.revision):''}</div>
+    </li>`;
+  });
+  html += `</ul>`;
+  if(f.edges.length){
+    html += `<h2 style="margin-top:8px">🔗 替代关系</h2>`;
+    f.edges.forEach(e=>{
+      const same = e.from===e.to;
+      const fromLabel = same ? `${esc(e.from)}(${e.from_date||'?'})` : esc(e.from);
+      const toLabel = same ? `同名新版(${e.to_date||'?'})` : esc(e.to);
+      html += `<div class="edge"><div class="e-line">
+        <span class="e-title"><a href="${e.from_url}" target="_blank">${fromLabel}</a></span>
+        <span class="e-arrow">──${same?'修正替代':'废止替代'}──▶</span>
+        <span class="e-title"><a href="${e.to_url}" target="_blank">${toLabel}</a></span>
+        ${e.basis==='text'?'<span class="basis basis-text">📄 文本确认</span>':'<span class="basis basis-inferred">🔍 推断</span>'}
+        ${e.effective_date?`<span style="font-size:11.5px;color:var(--t2)">新法施行 ${e.effective_date}</span>`:''}
+      </div>${e.clause?`<div class="clause">${esc(e.clause)}</div>`:''}</div>`;
+    });
+  } else {
+    html += `<div class="empty">该税种暂无已废止/已修改版本 —— 当前版本自制定以来未发生替代</div>`;
+  }
+  html += `</div>`;
+  detail.innerHTML = html;
+  detail.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+init();
+</script>
+</body>
+</html>

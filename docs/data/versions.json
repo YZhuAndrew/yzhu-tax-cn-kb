@@ -1,0 +1,933 @@
+{
+  "updated": "2026-08-22 20:13:00",
+  "families": [
+    {
+      "base": "增值税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国增值税法",
+        "publish_date": "2024-12-25",
+        "effective_date": "2026-01-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff808181927b083b0193fd65a0eb02cb"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f41184f9b16d0",
+          "title": "中华人民共和国增值税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2017-11-19",
+          "effective_date": "",
+          "status_code": 1,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f41184f9b16d0"
+        },
+        {
+          "bbbs": "ff808181927b083b0193fd65a0eb02cb",
+          "title": "中华人民共和国增值税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2024-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff808181927b083b0193fd65a0eb02cb"
+        },
+        {
+          "bbbs": "ff8081819b697220019bc0aa9f146bf4",
+          "title": "中华人民共和国增值税法实施条例",
+          "doc_type": "实施条例",
+          "revision": null,
+          "publish_date": "2025-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8081819b697220019bc0aa9f146bf4"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国增值税暂行条例",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f41184f9b16d0",
+          "from_bbbs": "ff8080816f3cbb3c016f41184f9b16d0",
+          "from_date": "2017-11-19",
+          "to": "中华人民共和国增值税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff808181927b083b0193fd65a0eb02cb",
+          "to_bbbs": "ff808181927b083b0193fd65a0eb02cb",
+          "to_date": "2024-12-25",
+          "basis": "text",
+          "effective_date": "2026-01-01",
+          "clause": "第三十八条　本法自2026年1月1日起施行。《中华人民共和国增值税暂行条例》同时废止。"
+        }
+      ]
+    },
+    {
+      "base": "消费税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国消费税暂行条例",
+        "publish_date": "2008-11-10",
+        "effective_date": "",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411aeff91764"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f411aeff91764",
+          "title": "中华人民共和国消费税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2008-11-10",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411aeff91764"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "关税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国关税法",
+        "publish_date": "2024-04-26",
+        "effective_date": "2024-12-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8081818f197cf0018f1a72b2c801e0"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f40e90cf30a95",
+          "title": "中华人民共和国进出口关税条例",
+          "doc_type": "条例",
+          "revision": null,
+          "publish_date": "2017-03-01",
+          "effective_date": "",
+          "status_code": 1,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40e90cf30a95"
+        },
+        {
+          "bbbs": "ff8081818f197cf0018f1a72b2c801e0",
+          "title": "中华人民共和国关税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2024-04-26",
+          "effective_date": "2024-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8081818f197cf0018f1a72b2c801e0"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国进出口关税条例",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40e90cf30a95",
+          "from_bbbs": "ff8080816f3cbb3c016f40e90cf30a95",
+          "from_date": "2017-03-01",
+          "to": "中华人民共和国关税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff8081818f197cf0018f1a72b2c801e0",
+          "to_bbbs": "ff8081818f197cf0018f1a72b2c801e0",
+          "to_date": "2024-04-26",
+          "basis": "text",
+          "effective_date": "2024-12-01",
+          "clause": "第七十二条　本法自2024年12月1日起施行。《中华人民共和国进出口关税条例》同时废止。"
+        }
+      ]
+    },
+    {
+      "base": "企业所得税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国企业所得税法",
+        "publish_date": "2018-12-29",
+        "effective_date": "2018-12-29",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f2106acd11784"
+      },
+      "timeline": [
+        {
+          "bbbs": "2c909fdd678bf17901678bf8470409d3",
+          "title": "中华人民共和国企业所得税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2017-02-24",
+          "effective_date": "2017-02-24",
+          "status_code": 2,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf8470409d3"
+        },
+        {
+          "bbbs": "ff8080816f135f46016f2106acd11784",
+          "title": "中华人民共和国企业所得税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f2106acd11784"
+        },
+        {
+          "bbbs": "ff8080816f3e9784016f42099687030a",
+          "title": "中华人民共和国企业所得税法实施条例",
+          "doc_type": "实施条例",
+          "revision": null,
+          "publish_date": "2019-04-23",
+          "effective_date": "",
+          "status_code": 2,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e9784016f42099687030a"
+        },
+        {
+          "bbbs": "ff8081819c230ff2019c2d0fcd4a6436",
+          "title": "中华人民共和国企业所得税法实施条例",
+          "doc_type": "实施条例",
+          "revision": null,
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8081819c230ff2019c2d0fcd4a6436"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国企业所得税法",
+          "from_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf8470409d3",
+          "from_bbbs": "2c909fdd678bf17901678bf8470409d3",
+          "from_date": "2017-02-24",
+          "to": "中华人民共和国企业所得税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f2106acd11784",
+          "to_bbbs": "ff8080816f135f46016f2106acd11784",
+          "to_date": "2018-12-29",
+          "basis": "inferred",
+          "effective_date": "2018-12-29",
+          "clause": ""
+        },
+        {
+          "from": "中华人民共和国企业所得税法实施条例",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e9784016f42099687030a",
+          "from_bbbs": "ff8080816f3e9784016f42099687030a",
+          "from_date": "2019-04-23",
+          "to": "中华人民共和国企业所得税法实施条例",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff8081819c230ff2019c2d0fcd4a6436",
+          "to_bbbs": "ff8081819c230ff2019c2d0fcd4a6436",
+          "to_date": "2024-12-06",
+          "basis": "inferred",
+          "effective_date": "2025-01-20",
+          "clause": ""
+        }
+      ]
+    },
+    {
+      "base": "个人所得税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国个人所得税法",
+        "publish_date": "2018-08-31",
+        "effective_date": "2019-01-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf724bd0609"
+      },
+      "timeline": [
+        {
+          "bbbs": "2c909fdd678bf17901678bf724bd0609",
+          "title": "中华人民共和国个人所得税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2018-08-31",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf724bd0609"
+        },
+        {
+          "bbbs": "ff8080816f3cbb3c016f4122d8d9194b",
+          "title": "中华人民共和国个人所得税法实施条例",
+          "doc_type": "实施条例",
+          "revision": null,
+          "publish_date": "2018-12-18",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4122d8d9194b"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "房产税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国房产税暂行条例",
+        "publish_date": "2011-01-08",
+        "effective_date": "",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4130e3f91bfc"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f4130e3f91bfc",
+          "title": "中华人民共和国房产税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2011-01-08",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4130e3f91bfc"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "土地增值税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国土地增值税暂行条例",
+        "publish_date": "2011-01-08",
+        "effective_date": "",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411bd9e317a0"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国土地增值税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2011-01-08",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411bd9e317a0"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "契税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国契税法",
+        "publish_date": "2020-08-11",
+        "effective_date": "2021-09-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff808081736ba7420173e71ef7563753"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f409add6a0536",
+          "title": "中华人民共和国契税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2019-03-02",
+          "effective_date": "2019-03-02",
+          "status_code": 1,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f409add6a0536"
+        },
+        {
+          "bbbs": "ff808081736ba7420173e71ef7563753",
+          "title": "中华人民共和国契税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2020-08-11",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff808081736ba7420173e71ef7563753"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国契税暂行条例",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f409add6a0536",
+          "from_bbbs": "ff8080816f3cbb3c016f409add6a0536",
+          "from_date": "2019-03-02",
+          "to": "中华人民共和国契税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff808081736ba7420173e71ef7563753",
+          "to_bbbs": "ff808081736ba7420173e71ef7563753",
+          "to_date": "2020-08-11",
+          "basis": "text",
+          "effective_date": "2021-09-01",
+          "clause": "第十六条　本法自2021年9月1日起施行。1997年7月7日国务院发布的《中华人民共和国契税暂行条例》同时废止。"
+        }
+      ]
+    },
+    {
+      "base": "城镇土地使用税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国城镇土地使用税暂行条例",
+        "publish_date": "2019-03-02",
+        "effective_date": "",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414f9d74216e"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f414f9d74216e",
+          "title": "中华人民共和国城镇土地使用税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2019-03-02",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414f9d74216e"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "车船税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国车船税法",
+        "publish_date": "2019-04-23",
+        "effective_date": "2019-04-23",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f215dc4071a64"
+      },
+      "timeline": [
+        {
+          "bbbs": "2c909fdd678bf17901678bf717e705eb",
+          "title": "中华人民共和国车船税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2011-02-25",
+          "effective_date": "2012-01-01",
+          "status_code": 2,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf717e705eb"
+        },
+        {
+          "bbbs": "ff8080816f3cbb3c016f41085bb51282",
+          "title": "中华人民共和国车船税法实施条例",
+          "doc_type": "实施条例",
+          "revision": null,
+          "publish_date": "2019-03-02",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f41085bb51282"
+        },
+        {
+          "bbbs": "ff8080816f135f46016f215dc4071a64",
+          "title": "中华人民共和国车船税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2019-04-23",
+          "effective_date": "2019-04-23",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f215dc4071a64"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国车船税法",
+          "from_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf717e705eb",
+          "from_bbbs": "2c909fdd678bf17901678bf717e705eb",
+          "from_date": "2011-02-25",
+          "to": "中华人民共和国车船税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f215dc4071a64",
+          "to_bbbs": "ff8080816f135f46016f215dc4071a64",
+          "to_date": "2019-04-23",
+          "basis": "inferred",
+          "effective_date": "2019-04-23",
+          "clause": ""
+        }
+      ]
+    },
+    {
+      "base": "车辆购置税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国车辆购置税法",
+        "publish_date": "2018-12-29",
+        "effective_date": "2019-07-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f2147561d18ed"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f135f46016f2147561d18ed",
+          "title": "中华人民共和国车辆购置税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2018-12-29",
+          "effective_date": "2019-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f2147561d18ed"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "船舶吨税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国船舶吨税法",
+        "publish_date": "2018-10-26",
+        "effective_date": "2018-10-26",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d0fc5761317"
+      },
+      "timeline": [
+        {
+          "bbbs": "2c909fdd678bf17901678bf88ea50b27",
+          "title": "中华人民共和国船舶吨税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2017-12-27",
+          "effective_date": "2018-07-01",
+          "status_code": 2,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf88ea50b27"
+        },
+        {
+          "bbbs": "ff8080816f135f46016f1d0fc5761317",
+          "title": "中华人民共和国船舶吨税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2018-10-26",
+          "effective_date": "2018-10-26",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d0fc5761317"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国船舶吨税法",
+          "from_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf88ea50b27",
+          "from_bbbs": "2c909fdd678bf17901678bf88ea50b27",
+          "from_date": "2017-12-27",
+          "to": "中华人民共和国船舶吨税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d0fc5761317",
+          "to_bbbs": "ff8080816f135f46016f1d0fc5761317",
+          "to_date": "2018-10-26",
+          "basis": "inferred",
+          "effective_date": "2018-10-26",
+          "clause": ""
+        }
+      ]
+    },
+    {
+      "base": "烟叶税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国烟叶税法",
+        "publish_date": "2017-12-27",
+        "effective_date": "2018-07-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf88e4e0b1d"
+      },
+      "timeline": [
+        {
+          "bbbs": "2c909fdd678bf17901678bf88e4e0b1d",
+          "title": "中华人民共和国烟叶税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2017-12-27",
+          "effective_date": "2018-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf88e4e0b1d"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "耕地占用税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国耕地占用税法",
+        "publish_date": "2018-12-29",
+        "effective_date": "2019-09-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f213156b61815"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f135f46016f213156b61815",
+          "title": "中华人民共和国耕地占用税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2018-12-29",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f213156b61815"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "印花税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国印花税法",
+        "publish_date": "2021-06-10",
+        "effective_date": "2022-07-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff80818179f5da5e0179f890885b0481"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f414cb41b20d8",
+          "title": "中华人民共和国印花税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2011-01-08",
+          "effective_date": "",
+          "status_code": 1,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414cb41b20d8"
+        },
+        {
+          "bbbs": "ff80818179f5da5e0179f890885b0481",
+          "title": "中华人民共和国印花税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2021-06-10",
+          "effective_date": "2022-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff80818179f5da5e0179f890885b0481"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国印花税暂行条例",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414cb41b20d8",
+          "from_bbbs": "ff8080816f3cbb3c016f414cb41b20d8",
+          "from_date": "2011-01-08",
+          "to": "中华人民共和国印花税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff80818179f5da5e0179f890885b0481",
+          "to_bbbs": "ff80818179f5da5e0179f890885b0481",
+          "to_date": "2021-06-10",
+          "basis": "text",
+          "effective_date": "2022-07-01",
+          "clause": "第二十条　本法自2022年7月1日起施行。1988年8月6日国务院发布的《中华人民共和国印花税暂行条例》同时废止。"
+        }
+      ]
+    },
+    {
+      "base": "城市维护建设税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国城市维护建设税法",
+        "publish_date": "2020-08-11",
+        "effective_date": "2021-09-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff808081736ba7420173e715adbf36ff"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f40fc47f00fd5",
+          "title": "中华人民共和国城市维护建设税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2011-01-08",
+          "effective_date": "2011-01-08",
+          "status_code": 1,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40fc47f00fd5"
+        },
+        {
+          "bbbs": "ff808081736ba7420173e715adbf36ff",
+          "title": "中华人民共和国城市维护建设税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2020-08-11",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff808081736ba7420173e715adbf36ff"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国城市维护建设税暂行条例",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40fc47f00fd5",
+          "from_bbbs": "ff8080816f3cbb3c016f40fc47f00fd5",
+          "from_date": "2011-01-08",
+          "to": "中华人民共和国城市维护建设税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff808081736ba7420173e715adbf36ff",
+          "to_bbbs": "ff808081736ba7420173e715adbf36ff",
+          "to_date": "2020-08-11",
+          "basis": "text",
+          "effective_date": "2021-09-01",
+          "clause": "第十一条　本法自2021年9月1日起施行。1985年2月8日国务院发布的《中华人民共和国城市维护建设税暂行条例》同时废止。"
+        }
+      ]
+    },
+    {
+      "base": "资源税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国资源税法",
+        "publish_date": "2019-08-26",
+        "effective_date": "2020-09-01",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4635be1b2873"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f411fb11d18ac",
+          "title": "中华人民共和国资源税暂行条例",
+          "doc_type": "暂行条例",
+          "revision": null,
+          "publish_date": "2011-09-30",
+          "effective_date": "",
+          "status_code": 1,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411fb11d18ac"
+        },
+        {
+          "bbbs": "ff8080816f3cbb3c016f4635be1b2873",
+          "title": "中华人民共和国资源税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2019-08-26",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4635be1b2873"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国资源税暂行条例",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411fb11d18ac",
+          "from_bbbs": "ff8080816f3cbb3c016f411fb11d18ac",
+          "from_date": "2011-09-30",
+          "to": "中华人民共和国资源税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4635be1b2873",
+          "to_bbbs": "ff8080816f3cbb3c016f4635be1b2873",
+          "to_date": "2019-08-26",
+          "basis": "text",
+          "effective_date": "2020-09-01",
+          "clause": "第十七条　本法自2020年9月1日起施行。1993年12月25日国务院发布的《中华人民共和国资源税暂行条例》同时废止。"
+        }
+      ]
+    },
+    {
+      "base": "环境保护税",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国环境保护税法",
+        "publish_date": "2025-10-28",
+        "effective_date": "2025-10-28",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=6bae366fd9f94fbf9450c48a68bfc68a"
+      },
+      "timeline": [
+        {
+          "bbbs": "2c909fdd678bf17901678bf8429b09bf",
+          "title": "中华人民共和国环境保护税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2016-12-25",
+          "effective_date": "2018-01-01",
+          "status_code": 2,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf8429b09bf"
+        },
+        {
+          "bbbs": "ff8080816f3cbb3c016f413547161d1e",
+          "title": "中华人民共和国环境保护税法实施条例",
+          "doc_type": "实施条例",
+          "revision": null,
+          "publish_date": "2017-12-25",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f413547161d1e"
+        },
+        {
+          "bbbs": "ff8080816f135f46016f1d0bdc6a1306",
+          "title": "中华人民共和国环境保护税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2018-10-26",
+          "effective_date": "2018-10-26",
+          "status_code": 2,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d0bdc6a1306"
+        },
+        {
+          "bbbs": "6bae366fd9f94fbf9450c48a68bfc68a",
+          "title": "中华人民共和国环境保护税法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2025-10-28",
+          "effective_date": "2025-10-28",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=6bae366fd9f94fbf9450c48a68bfc68a"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国环境保护税法",
+          "from_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf8429b09bf",
+          "from_bbbs": "2c909fdd678bf17901678bf8429b09bf",
+          "from_date": "2016-12-25",
+          "to": "中华人民共和国环境保护税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=6bae366fd9f94fbf9450c48a68bfc68a",
+          "to_bbbs": "6bae366fd9f94fbf9450c48a68bfc68a",
+          "to_date": "2025-10-28",
+          "basis": "inferred",
+          "effective_date": "2025-10-28",
+          "clause": ""
+        },
+        {
+          "from": "中华人民共和国环境保护税法",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d0bdc6a1306",
+          "from_bbbs": "ff8080816f135f46016f1d0bdc6a1306",
+          "from_date": "2018-10-26",
+          "to": "中华人民共和国环境保护税法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=6bae366fd9f94fbf9450c48a68bfc68a",
+          "to_bbbs": "6bae366fd9f94fbf9450c48a68bfc68a",
+          "to_date": "2025-10-28",
+          "basis": "inferred",
+          "effective_date": "2025-10-28",
+          "clause": ""
+        }
+      ]
+    },
+    {
+      "base": "税收征收管理",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国税收征收管理法",
+        "publish_date": "2015-04-24",
+        "effective_date": "2015-04-24",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf78cff0785"
+      },
+      "timeline": [
+        {
+          "bbbs": "2c909fdd678bf17901678bf78cff0785",
+          "title": "中华人民共和国税收征收管理法",
+          "doc_type": "法",
+          "revision": null,
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf78cff0785"
+        },
+        {
+          "bbbs": "ff8080816f3cbb3c016f409df6fa0566",
+          "title": "中华人民共和国税收征收管理法实施细则",
+          "doc_type": "实施细则",
+          "revision": null,
+          "publish_date": "2016-02-06",
+          "effective_date": "",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f409df6fa0566"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "base": "发票",
+      "updated": "2026-08-22 20:13:00",
+      "current": {
+        "title": "中华人民共和国发票管理办法",
+        "publish_date": "2023-07-20",
+        "effective_date": "2023-07-20",
+        "status_code": 3,
+        "url": "https://flk.npc.gov.cn/detail?id=ff8081818a1cb546018a6e362a746d5a"
+      },
+      "timeline": [
+        {
+          "bbbs": "ff8080816f3cbb3c016f411e469a1853",
+          "title": "中华人民共和国发票管理办法",
+          "doc_type": "管理办法",
+          "revision": null,
+          "publish_date": "2019-03-02",
+          "effective_date": "",
+          "status_code": 2,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411e469a1853"
+        },
+        {
+          "bbbs": "ff8081818a1cb546018a6e362a746d5a",
+          "title": "中华人民共和国发票管理办法",
+          "doc_type": "管理办法",
+          "revision": null,
+          "publish_date": "2023-07-20",
+          "effective_date": "2023-07-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规",
+          "url": "https://flk.npc.gov.cn/detail?id=ff8081818a1cb546018a6e362a746d5a"
+        }
+      ],
+      "edges": [
+        {
+          "from": "中华人民共和国发票管理办法",
+          "from_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f411e469a1853",
+          "from_bbbs": "ff8080816f3cbb3c016f411e469a1853",
+          "from_date": "2019-03-02",
+          "to": "中华人民共和国发票管理办法",
+          "to_url": "https://flk.npc.gov.cn/detail?id=ff8081818a1cb546018a6e362a746d5a",
+          "to_bbbs": "ff8081818a1cb546018a6e362a746d5a",
+          "to_date": "2023-07-20",
+          "basis": "inferred",
+          "effective_date": "2023-07-20",
+          "clause": ""
+        }
+      ]
+    }
+  ]
+}
