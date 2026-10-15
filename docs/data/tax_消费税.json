@@ -1,9 +1,9 @@
 {
-  "updated": "2026-08-22 17:47:41",
+  "updated": "2026-10-15 08:12:21",
   "keyword": "消费税",
   "type": "消费税",
   "scope": "title",
-  "total": 91,
+  "total": 90,
   "results": [
     {
       "id": "2c909fdd678bf17901678bf7670606ef",
@@ -231,15 +231,6 @@
       "category": "地方法规"
     },
     {
-      "id": "ff8081819f12c6b4019f172887b517bf",
-      "title": "上海市人民代表大会常务委员会关于消费者权益保护委员会行使《上海市消费者权益保护条例》赋予消费者协会职能的解释",
-      "publish_date": "2004-02-20",
-      "effective_date": "2004-03-01",
-      "status_code": 3,
-      "issuing_authority": "上海市人民代表大会常务委员会",
-      "category": "地方法规"
-    },
-    {
       "id": "ff80818199e72c4f019a520c49ed0d11",
       "title": "江苏省消费者权益保护条例",
       "publish_date": "2025-09-30",
@@ -273,6 +264,15 @@
       "effective_date": "2017-05-01",
       "status_code": 3,
       "issuing_authority": "浙江省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016cdaf04a6b4e87",
+      "title": "安徽省人民代表大会常务委员会关于安徽省耕地占用税适用税额的决定",
+      "publish_date": "2019-07-29",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "安徽省人民代表大会常务委员会",
       "category": "地方法规"
     }
   ]

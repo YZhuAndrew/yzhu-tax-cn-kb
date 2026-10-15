@@ -1,9 +1,9 @@
 {
-  "updated": "2026-08-22 17:47:41",
+  "updated": "2026-10-15 08:12:21",
   "keyword": "个人 专项附加扣除",
   "type": "专项附加扣除",
   "scope": "fulltext",
-  "total": 7372,
+  "total": 7333,
   "results": [
     {
       "id": "ff808181927b083b0195881cfb1458aa",
@@ -186,6 +186,15 @@
       "category": "法律"
     },
     {
+      "id": "7d951fed0e964a509d223ebd47af0f5a",
+      "title": "中华人民共和国国防动员法",
+      "publish_date": "2026-08-28",
+      "effective_date": "2026-10-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
       "id": "ff80818197af9ccc0197b159c38a0408",
       "title": "中华人民共和国治安管理处罚法",
       "publish_date": "2025-06-27",
@@ -262,15 +271,6 @@
       "title": "中华人民共和国海警法",
       "publish_date": "2021-01-22",
       "effective_date": "2021-02-01",
-      "status_code": 3,
-      "issuing_authority": "全国人民代表大会常务委员会",
-      "category": "法律"
-    },
-    {
-      "id": "ff80808171e9e18101727e38094d7e07",
-      "title": "中华人民共和国基本医疗卫生与健康促进法",
-      "publish_date": "2019-12-28",
-      "effective_date": "2020-06-01",
       "status_code": 3,
       "issuing_authority": "全国人民代表大会常务委员会",
       "category": "法律"

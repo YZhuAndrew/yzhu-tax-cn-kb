@@ -1,9 +1,9 @@
 {
-  "updated": "2026-08-22 17:47:41",
+  "updated": "2026-10-15 08:12:21",
   "keyword": "虚开发票 风险",
   "type": "虚开发票风险",
   "scope": "fulltext",
-  "total": 196,
+  "total": 197,
   "results": [
     {
       "id": "1349e6aadd4947fe83ff811739825d3c",
@@ -42,6 +42,15 @@
       "category": "法律"
     },
     {
+      "id": "ff8081819ff54ab801a0ae8f89192d28",
+      "title": "中华人民共和国进出口商品检验法实施条例",
+      "publish_date": "2026-08-08",
+      "effective_date": "2026-08-15",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
       "id": "ff808181927f0e7b019294a6bf08358f",
       "title": "中华人民共和国两用物项出口管制条例",
       "publish_date": "2024-09-30",
@@ -64,15 +73,6 @@
       "title": "中华人民共和国发票管理办法",
       "publish_date": "2023-07-20",
       "effective_date": "2023-07-20",
-      "status_code": 3,
-      "issuing_authority": "国务院",
-      "category": "行政法规"
-    },
-    {
-      "id": "ff80818180e0a61301811e48085f1fd5",
-      "title": "中华人民共和国进出口商品检验法实施条例",
-      "publish_date": "2022-03-29",
-      "effective_date": "2022-05-01",
       "status_code": 3,
       "issuing_authority": "国务院",
       "category": "行政法规"
@@ -222,15 +222,6 @@
       "category": "地方法规"
     },
     {
-      "id": "ff808181927f0e7b0193fd7ef4817c36",
-      "title": "通辽市城市排水条例",
-      "publish_date": "2024-12-05",
-      "effective_date": "2025-03-01",
-      "status_code": 3,
-      "issuing_authority": "通辽市人民代表大会常务委员会",
-      "category": "地方法规"
-    },
-    {
       "id": "ff80818181668bed01816b85ef202050",
       "title": "内蒙古自治区实施《中华人民共和国消费者权益保护法》办法",
       "publish_date": "2022-05-26",
@@ -273,6 +264,15 @@
       "effective_date": "2022-04-21",
       "status_code": 3,
       "issuing_authority": "辽宁省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081817d283644017d3627c0cc33f3",
+      "title": "鞍山市优化营商环境条例",
+      "publish_date": "2021-10-25",
+      "effective_date": "2021-11-01",
+      "status_code": 3,
+      "issuing_authority": "鞍山市人民代表大会常务委员会",
       "category": "地方法规"
     }
   ]

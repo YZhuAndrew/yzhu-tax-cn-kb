@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22 17:47:41",
+  "updated": "2026-10-15 08:12:21",
   "searches": {
     "tax_增值税": {
       "keyword": "增值税",
@@ -283,7 +283,7 @@
       "keyword": "企业所得税",
       "type": "企业所得税",
       "scope": "title",
-      "total": 294,
+      "total": 293,
       "results": [
         {
           "id": "2c909fdd678bf17901678bf63c7c0343",
@@ -839,7 +839,7 @@
       "keyword": "消费税",
       "type": "消费税",
       "scope": "title",
-      "total": 91,
+      "total": 90,
       "results": [
         {
           "id": "2c909fdd678bf17901678bf7670606ef",
@@ -1067,15 +1067,6 @@
           "category": "地方法规"
         },
         {
-          "id": "ff8081819f12c6b4019f172887b517bf",
-          "title": "上海市人民代表大会常务委员会关于消费者权益保护委员会行使《上海市消费者权益保护条例》赋予消费者协会职能的解释",
-          "publish_date": "2004-02-20",
-          "effective_date": "2004-03-01",
-          "status_code": 3,
-          "issuing_authority": "上海市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
           "id": "ff80818199e72c4f019a520c49ed0d11",
           "title": "江苏省消费者权益保护条例",
           "publish_date": "2025-09-30",
@@ -1109,6 +1100,15 @@
           "effective_date": "2017-05-01",
           "status_code": 3,
           "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cdaf04a6b4e87",
+          "title": "安徽省人民代表大会常务委员会关于安徽省耕地占用税适用税额的决定",
+          "publish_date": "2019-07-29",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
           "category": "地方法规"
         }
       ]
@@ -1896,7 +1896,7 @@
       "keyword": "土地增值税",
       "type": "土地增值税",
       "scope": "title",
-      "total": 191,
+      "total": 190,
       "results": [
         {
           "id": "ff8080816f135f46016f2104531f1774",
@@ -2452,7 +2452,7 @@
       "keyword": "发票管理办法",
       "type": "发票管理",
       "scope": "title",
-      "total": 179,
+      "total": 177,
       "results": [
         {
           "id": "2c909fdd678bf17901678bf8d0550bf9",
@@ -3842,7 +3842,7 @@
       "keyword": "虚开发票 风险",
       "type": "虚开发票风险",
       "scope": "fulltext",
-      "total": 196,
+      "total": 197,
       "results": [
         {
           "id": "1349e6aadd4947fe83ff811739825d3c",
@@ -3881,6 +3881,15 @@
           "category": "法律"
         },
         {
+          "id": "ff8081819ff54ab801a0ae8f89192d28",
+          "title": "中华人民共和国进出口商品检验法实施条例",
+          "publish_date": "2026-08-08",
+          "effective_date": "2026-08-15",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
           "id": "ff808181927f0e7b019294a6bf08358f",
           "title": "中华人民共和国两用物项出口管制条例",
           "publish_date": "2024-09-30",
@@ -3903,15 +3912,6 @@
           "title": "中华人民共和国发票管理办法",
           "publish_date": "2023-07-20",
           "effective_date": "2023-07-20",
-          "status_code": 3,
-          "issuing_authority": "国务院",
-          "category": "行政法规"
-        },
-        {
-          "id": "ff80818180e0a61301811e48085f1fd5",
-          "title": "中华人民共和国进出口商品检验法实施条例",
-          "publish_date": "2022-03-29",
-          "effective_date": "2022-05-01",
           "status_code": 3,
           "issuing_authority": "国务院",
           "category": "行政法规"
@@ -4061,15 +4061,6 @@
           "category": "地方法规"
         },
         {
-          "id": "ff808181927f0e7b0193fd7ef4817c36",
-          "title": "通辽市城市排水条例",
-          "publish_date": "2024-12-05",
-          "effective_date": "2025-03-01",
-          "status_code": 3,
-          "issuing_authority": "通辽市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
           "id": "ff80818181668bed01816b85ef202050",
           "title": "内蒙古自治区实施《中华人民共和国消费者权益保护法》办法",
           "publish_date": "2022-05-26",
@@ -4113,6 +4104,15 @@
           "status_code": 3,
           "issuing_authority": "辽宁省人民代表大会常务委员会",
           "category": "地方法规"
+        },
+        {
+          "id": "ff8081817d283644017d3627c0cc33f3",
+          "title": "鞍山市优化营商环境条例",
+          "publish_date": "2021-10-25",
+          "effective_date": "2021-11-01",
+          "status_code": 3,
+          "issuing_authority": "鞍山市人民代表大会常务委员会",
+          "category": "地方法规"
         }
       ]
     },
@@ -4120,7 +4120,7 @@
       "keyword": "留抵退税",
       "type": "留抵退税",
       "scope": "fulltext",
-      "total": 683,
+      "total": 685,
       "results": [
         {
           "id": "ff808081729d1efe01729d50b5c500bf",
@@ -4676,7 +4676,7 @@
       "keyword": "个人 专项附加扣除",
       "type": "专项附加扣除",
       "scope": "fulltext",
-      "total": 7372,
+      "total": 7333,
       "results": [
         {
           "id": "ff808181927b083b0195881cfb1458aa",
@@ -4859,6 +4859,15 @@
           "category": "法律"
         },
         {
+          "id": "7d951fed0e964a509d223ebd47af0f5a",
+          "title": "中华人民共和国国防动员法",
+          "publish_date": "2026-08-28",
+          "effective_date": "2026-10-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
           "id": "ff80818197af9ccc0197b159c38a0408",
           "title": "中华人民共和国治安管理处罚法",
           "publish_date": "2025-06-27",
@@ -4938,15 +4947,6 @@
           "status_code": 3,
           "issuing_authority": "全国人民代表大会常务委员会",
           "category": "法律"
-        },
-        {
-          "id": "ff80808171e9e18101727e38094d7e07",
-          "title": "中华人民共和国基本医疗卫生与健康促进法",
-          "publish_date": "2019-12-28",
-          "effective_date": "2020-06-01",
-          "status_code": 3,
-          "issuing_authority": "全国人民代表大会常务委员会",
-          "category": "法律"
         }
       ]
     },
@@ -4954,7 +4954,7 @@
       "keyword": "金税四期 风险指标",
       "type": "金税四期风险",
       "scope": "fulltext",
-      "total": 1229,
+      "total": 1227,
       "results": [
         {
           "id": "ff808081729d1efe01729d50b5c500bf",
