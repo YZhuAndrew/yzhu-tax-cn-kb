@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16 06:47:09",
+  "updated": "2026-10-17 06:39:01",
   "searches": {
     "tax_增值税": {
       "keyword": "增值税",
@@ -4676,7 +4676,7 @@
       "keyword": "个人 专项附加扣除",
       "type": "专项附加扣除",
       "scope": "fulltext",
-      "total": 7333,
+      "total": 7331,
       "results": [
         {
           "id": "ff808181927b083b0195881cfb1458aa",
