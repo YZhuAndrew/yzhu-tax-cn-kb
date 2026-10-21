@@ -107,6 +107,24 @@ python scripts/tax_aggregator.py "<关键词>" --size 10
 python scripts/tax_aggregator.py "<关键词>" --sources npc,chinatax --size 10  # 仅 NPC + 税务总局
 ```
 
+### 本地知识库 — SQLite 落库 + 法条级检索（`scripts/tax_kb.py`）
+
+```bash
+# 全量采集 20 税族(NPC 母法/实施细则/历史版本,增量可中断续跑) → data/kb.sqlite
+python scripts/tax_kb.py --build
+python scripts/tax_kb.py --build --tax 契税            # 单族
+python scripts/tax_kb.py --build --refresh            # 忽略 30 天 TTL 强制重抓
+# 法条级检索(双字 FTS5,支持税族/法规过滤;--current 只看现行)
+python scripts/tax_kb.py --search "小规模纳税人" --tax 增值税
+python scripts/tax_kb.py --search "扣除凭证" --current
+# 查看某法规全部法条 / 库内统计
+python scripts/tax_kb.py --law "增值税法"
+python scripts/tax_kb.py --stats
+```
+
+法条含章归属与原文全文;增量规则:元数据每次刷新,全文 30 天 TTL、效力状态变化或解析失败时重抓。
+库文件 `data/kb.sqlite` 为本地工件(已 gitignore)。
+
 ### 缓存控制
 
 ```bash

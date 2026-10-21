@@ -7,3 +7,6 @@ __pycache__/
 /tmp/
 *.pyo
 *.log
+# 知识库 SQLite 工件(本地/CI 构建,不进 git)
+data/
+*.sqlite
