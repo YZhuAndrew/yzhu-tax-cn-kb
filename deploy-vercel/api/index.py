@@ -72,6 +72,8 @@ def _init_province_labels():
 
 def _source_label(site: str) -> str:
     _init_province_labels()
+    # TODO(数据源同步): 主仓库已新增 fgk 直连/会计准则(12366、kjs.mof、casc.org.cn、
+    # fgk.mof)等源（scripts/fgk_chinatax.py 等），本副本尚未同步，见 scripts/tax_server.py
     labels = {
         "fgk.chinatax.gov.cn": "税务法规库",
         "chinatax.gov.cn": "国家税务总局",

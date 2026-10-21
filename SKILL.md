@@ -272,8 +272,19 @@ python scripts/tax_aggregator.py "<关键词>" --size 10
 | 数据源 | 覆盖范围 | 权威度 | 实时性 | 访问方式 |
 |--------|---------|--------|--------|---------|
 | NPC 国家法规库 | 法律、行政法规、地方法规、司法解释 | ⭐⭐⭐⭐⭐ | 实时 | API |
+| fgk.chinatax.gov.cn 税务法规库 | 税务官方总库：法规文件本体 + 效力状态 + 税种标签 + 文号（`scripts/fgk_chinatax.py`） | ⭐⭐⭐⭐⭐ | 实时 | API |
 | chinatax.gov.cn | 部门规章、公告、政策解读、操作指南 | ⭐⭐⭐⭐ | 实时 | WebFetch |
+| 会计准则源（kjs.mof.gov.cn + casc.org.cn） | 企业会计准则、可持续披露准则、解释公告、实施问答 | ⭐⭐⭐⭐ | 每日 | 聚合器 `accounting` 源 / `docs/data/accounting.json` |
+| fgk.mof.gov.cn / 12366 | 财政法规库、纳税服务问答 | ⭐⭐⭐⭐ | 实时 | Bing site: 间接 |
 | AnySearch | 行业动态、地方政策、网页补充 | ⭐⭐⭐ | 实时 | CLI |
+
+多源聚合命令（默认已含全部上述源）：
+
+```
+python scripts/tax_aggregator.py "<关键词>" --size 10
+# 查法规库最新文件（每日快照同源数据）：
+python scripts/fgk_chinatax.py --latest --count 30
+```
 
 ---
 

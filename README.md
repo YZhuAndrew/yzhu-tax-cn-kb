@@ -249,9 +249,13 @@ GET /api/text/ff808181927b083b0193fd65a0eb02cb
 | 数据源 | 覆盖范围 | 权威度 | 更新频率 | 访问方式 |
 |--------|---------|--------|---------|---------|
 | **NPC 国家法规库** | 法律、行政法规、地方法规、司法解释 | ⭐⭐⭐⭐⭐ | 实时同步 | `POST flk.npc.gov.cn` API |
-| **chinatax.gov.cn** | 国家税务总局公告、政策解读、操作指南 | ⭐⭐⭐⭐ | 实时 | Bing `site:` 搜索 |
+| **fgk.chinatax.gov.cn** | 税务总局政策法规库（官方总库）：法律/法规/规章/规范性文件/财税文件，含效力状态、税种标签、文号 | ⭐⭐⭐⭐⭐ | 实时 | `search5` JSON API（`scripts/fgk_chinatax.py`）+ 每日快照 `docs/data/fgk_latest.json` |
+| **chinatax.gov.cn** | 国家税务总局公告、政策解读、操作指南 | ⭐⭐⭐⭐ | 实时 | 站内搜索 API + Bing `site:` 兜底 |
+| **kjs.mof.gov.cn** | 财政部会计司：会计准则/制度正文、征求意见稿、解读 | ⭐⭐⭐⭐ | 每日 | 静态 HTML 抓取（`scripts/mof_kjs.py`）→ `docs/data/accounting.json` + 聚合器 `accounting` 源 |
+| **www.casc.org.cn** | 会计准则委员会：准则发布、应用案例、实施问答 | ⭐⭐⭐⭐ | 每日 | 静态 HTML 抓取（`scripts/casc_org.py`）→ `docs/data/accounting.json` |
+| **fgk.mof.gov.cn** | 财政部财政法规库 | ⭐⭐⭐⭐ | 实时 | 站点为 SPA 且 XHR 未逆向，Bing `site:` 间接检索（`scripts/mof_fgk.py` 仅探测可达性） |
+| **12366.chinatax.gov.cn** | 12366 纳税服务平台问答/解读 | ⭐⭐⭐⭐ | 实时 | Bing `site:` 间接检索（问答库直连留二期） |
 | **mof.gov.cn** | 财政部公告、财税联合发文 | ⭐⭐⭐⭐ | 实时 | Bing `site:` 搜索 |
-| **fgk.chinatax.gov.cn** | 税务法规库结构化内容 | ⭐⭐⭐⭐ | 实时 | Bing `site:` 搜索 |
 | **gov.cn** | 国务院政策发布、答记者问 | ⭐⭐⭐⭐⭐ | 实时 | Bing `site:` 搜索 |
 | **AnySearch** | 行业解读、学术分析、网页补充 | ⭐⭐⭐ | 实时 | CLI 子进程 |
 

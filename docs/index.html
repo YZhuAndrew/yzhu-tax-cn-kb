@@ -76,6 +76,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .guidance-panel .gp-footer .reset{background:none;color:var(--t2);font-size:12px;margin-top:6px;width:100%}
 .guidance-panel .gp-footer .reset:hover{color:var(--text)}
 @media(max-width:800px){.guidance-panel{width:100%}}
+.latest-board{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:800px){.latest-board{grid-template-columns:1fr}}
+.latest-col h3{font-size:14px;margin:0 0 10px;color:var(--text)}
+.latest-col h3 .sub{font-size:11px;color:var(--t3);font-weight:400;margin-left:6px}
+.latest-card{display:block;padding:10px 12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;text-decoration:none;color:var(--text);transition:border-color .12s,background .12s}
+.latest-card:hover{border-color:var(--primary);background:#fff}
+.latest-card .lc-title{font-size:13px;font-weight:600;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.latest-card .lc-meta{font-size:11px;color:var(--t2);margin-top:5px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.lc-badge{display:inline-block;padding:1px 6px;border-radius:4px;font-size:10px}
+.lc-badge.st-ok{background:var(--gbg);color:var(--green)}
+.lc-badge.st-pending{background:#dbeafe;color:#1d4ed8}
+.lc-badge.st-changed{background:var(--ybg);color:var(--yellow)}
+.lc-badge.st-dead{background:var(--rbg);color:var(--red)}
+.lc-badge.st-none{background:#f3f4f6;color:var(--t2)}
+.lc-tag{background:#f3f4f6;color:var(--t2);padding:1px 6px;border-radius:4px;font-size:10px}
+.back-latest{display:none;margin:0 auto 14px;width:fit-content;font-size:12px;color:var(--primary);cursor:pointer;text-decoration:underline}
 .hero{text-align:center;padding:48px 20px 28px;border-bottom:1px solid var(--border);transition:padding .3s}.hero-logo{display:block;margin:0 auto 14px;color:var(--text)}.hero-title{font-size:28px;font-weight:800;letter-spacing:8px;color:var(--text);margin-bottom:8px}.hero-subtitle{font-size:12px;color:var(--t2);letter-spacing:1px;max-width:360px;margin:0 auto;line-height:1.5}.hero.compact{padding:18px 20px 12px}.hero.compact .hero-logo{width:28px;height:28px;margin-bottom:8px}.hero.compact .hero-title{font-size:17px;letter-spacing:4px}.hero.compact .hero-subtitle{font-size:10px}</style>
 </head>
 <body>
@@ -115,6 +131,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
   </div>
 
   <div id="resultsContainer"></div>
+  <div class="back-latest" id="backLatest" onclick="backToLatest()">« 返回最新动态</div>
+  <div class="latest-board" id="latestBoard">
+    <div class="latest-col">
+      <h3>📚 税务法规库最新文件 <span class="sub" id="fgkNote">fgk.chinatax.gov.cn</span></h3>
+      <div id="fgkLatest"></div>
+    </div>
+    <div class="latest-col">
+      <h3>📐 会计准则动态 <span class="sub" id="accNote">会计司 · 准则委</span></h3>
+      <div id="accLatest"></div>
+    </div>
+  </div>
   <div class="data-note" id="dataNote"></div>
 
 </div>
@@ -159,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ═══════════ DATA LOADING ═══════════ */
 async function loadData() {
   document.getElementById('dataNote').innerHTML = '⏳ 正在加载数据…';
+  loadLatestBoard();
   try {
     const r = await fetch('data/index.json');
     const idx = await r.json();
@@ -169,6 +197,41 @@ async function loadData() {
   } catch(e) {
     document.getElementById('dataNote').innerHTML = '⚠️ 数据加载失败，请刷新页面重试';
   }
+}
+
+/* ═══════════ LATEST BOARD (fgk + accounting) ═══════════ */
+const FGK_STATUS_CLASS = {'全文有效':'st-ok','尚未生效':'st-pending','已修改':'st-changed','全文废止':'st-dead','全文失效':'st-dead'};
+async function loadLatestBoard() {
+  // 两路并行加载，任何一路失败只降级该栏（显示提示，不影响另一栏）
+  fetch('data/fgk_latest.json').then(r => r.json()).then(d => {
+    const rows = (d.results || []).slice(0, 8);
+    document.getElementById('fgkNote').textContent = `更新 ${d.updated || ''}${d.reused ? ' · 复用上次' : ''}`;
+    document.getElementById('fgkLatest').innerHTML = rows.map(x => {
+      const st = x.status || '';
+      const badge = st ? `<span class="lc-badge ${FGK_STATUS_CLASS[st] || 'st-none'}">${esc(st)}</span>` : '';
+      const taxes = (x.tax_categories || []).slice(0, 2).map(t => `<span class="lc-tag">${esc(t)}</span>`).join('');
+      return `<a class="latest-card" href="${esc(x.url)}" target="_blank" rel="noopener">
+        <div class="lc-title">${esc(x.title)}</div>
+        <div class="lc-meta">${badge}${x.document_number ? `<span>${esc(x.document_number)}</span>` : ''}${x.publish_date ? `<span>📅 ${esc(x.publish_date)}</span>` : ''}${taxes}</div></a>`;
+    }).join('') || '<div class="lc-meta">暂无数据</div>';
+  }).catch(() => { document.getElementById('fgkLatest').innerHTML = '<div class="lc-meta">⚠️ 加载失败</div>'; });
+
+  fetch('data/accounting.json').then(r => r.json()).then(d => {
+    const rows = (d.results || []).slice(0, 8);
+    document.getElementById('accNote').textContent = `更新 ${d.updated || ''}${d.reused ? ' · 复用上次' : ''}`;
+    document.getElementById('accLatest').innerHTML = rows.map(x => {
+      const src = (x.source || '').includes('kjs') ? '财政部会计司' : '会计准则委员会';
+      return `<a class="latest-card" href="${esc(x.url)}" target="_blank" rel="noopener">
+        <div class="lc-title">${esc(x.title)}</div>
+        <div class="lc-meta"><span class="lc-tag">${esc(x.column || '')}</span>${x.date ? `<span>📅 ${esc(x.date)}</span>` : ''}<span>${src}</span></div></a>`;
+    }).join('') || '<div class="lc-meta">暂无数据</div>';
+  }).catch(() => { document.getElementById('accLatest').innerHTML = '<div class="lc-meta">⚠️ 加载失败</div>'; });
+}
+
+function backToLatest() {
+  document.getElementById('resultsContainer').innerHTML = '';
+  document.getElementById('backLatest').style.display = 'none';
+  document.getElementById('latestBoard').style.display = 'grid';
 }
 
 function buildQuickTax() {
@@ -294,6 +357,9 @@ function doSearch() {
 
   allResults = allResults.filter(item => !_isGarbage(item.title));
   document.getElementById("heroSection")?.classList.add("compact");
+  // 搜索时让最新动态板块让位给结果区
+  document.getElementById('latestBoard').style.display = 'none';
+  document.getElementById('backLatest').style.display = 'block';
   renderResults(query, allResults);
 }
 

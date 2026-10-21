@@ -473,6 +473,9 @@ async function _baiduFallback(keyword, size) {
 
 // ── Bing interpretation search ──────────────────────────────────────────────
 export async function searchInterpretations(lawTitle, keyword = "", province = "") {
+  // TODO(数据源同步): 主仓库解读搜索已加入 12366.chinatax.gov.cn 与 fgk.mof.gov.cn，
+  // 聚合器已加入 fgk 直连与会计准则源（见 scripts/tax_server.py、scripts/tax_aggregator.py），
+  // 本副本尚未同步。
   let sources;
   if (province) {
     sources = [`${province}.chinatax.gov.cn`, "chinatax.gov.cn", "www.gov.cn"];

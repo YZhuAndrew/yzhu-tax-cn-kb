@@ -140,10 +140,15 @@ def _search_one_source(site: str, query: str, n: int = 5) -> list[dict]:
 
 
 def _source_label(site: str) -> str:
+    # 注意：按插入顺序做子串匹配，specific 子域必须排在泛域名之前
     labels = {
         "fgk.chinatax.gov.cn": "税务法规库",
+        "12366.chinatax.gov.cn": "12366纳税服务",
         "chinatax.gov.cn": "国家税务总局",
+        "fgk.mof.gov.cn": "财政法规库",
+        "kjs.mof.gov.cn": "财政部会计司",
         "mof.gov.cn": "财政部",
+        "casc.org.cn": "会计准则委员会",
         "npc.gov.cn": "全国人大",
         "gov.cn": "中国政府网",
     }
@@ -277,7 +282,12 @@ def search_interpretations(law_title: str, keyword: str = "",
         if province:
             sources = [f"{province}.chinatax.gov.cn", "chinatax.gov.cn", "www.gov.cn"]
         else:
-            sources = ["chinatax.gov.cn", "fgk.chinatax.gov.cn", "mof.gov.cn", "www.gov.cn"]
+            # fgk.mof（SPA 无直连接口）与 12366（问答 JS 渲染）经 Bing site: 间接检索；
+            # 会计司/准则委已由聚合器的 accounting 源直连覆盖，不重复进解读搜索
+            sources = [
+                "chinatax.gov.cn", "fgk.chinatax.gov.cn", "mof.gov.cn",
+                "www.gov.cn", "12366.chinatax.gov.cn", "fgk.mof.gov.cn",
+            ]
 
     title_short = law_title.replace("中华人民共和国", "").strip()
 

@@ -33,6 +33,12 @@ jobs:
         # partial failures reuse the previous run's data instead of wiping it.
         run: python .github/scripts/fetch_tax_data.py
 
+      - name: Fetch extra sources
+        # fgk.chinatax.gov.cn latest documents + accounting standards
+        # (kjs.mof.gov.cn / casc.org.cn). Never blocks the commit: failures
+        # reuse the previous run's files.
+        run: python .github/scripts/fetch_extra_sources.py
+
       - name: Build law version chains
         # 20 tax-law families: search all effect statuses, verify repeal
         # clauses from law DOCX text, write docs/data/versions.json.
