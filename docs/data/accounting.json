@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29 08:08:16",
-  "total": 76,
+  "updated": "2026-10-30 08:11:09",
+  "total": 67,
   "sources": [
     "kjs.mof.gov.cn",
     "www.casc.org.cn"
@@ -28,27 +28,6 @@
       "column": "工作通知"
     },
     {
-      "title": "强化协会职能作用 创新推动行业高质量发展  ——新注册会计师法系列解读之五",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202609/t20260924_3998130.htm",
-      "date": "2026-09-24",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
-    },
-    {
-      "title": "完善行业管理制度 持续强化注册会计师行业行政监管——新注册会计师法系列解读之四",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202609/t20260918_3997654.htm",
-      "date": "2026-09-18",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
-    },
-    {
-      "title": "准则筑基二十载 赋能发展向未来",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202609/t20260917_3997625.htm",
-      "date": "2026-09-17",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
-    },
-    {
       "title": "关于征求《企业会计准则解释第22号（征求意见稿）》意见的函",
       "url": "https://www.casc.org.cn/2026/0915/285890.shtml",
       "date": "2026-09-15",
@@ -63,39 +42,11 @@
       "column": "工作通知"
     },
     {
-      "title": "坚守诚信底线 提升注册会计师行业审计质量——新注册会计师法系列解读之三",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202609/t20260904_3996669.htm",
-      "date": "2026-09-04",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
-    },
-    {
-      "title": "坚持党对注册会计师行业的全面领导 以高质量党建引领行业高质量发展——新注册会计师法系...",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202608/t20260828_3996312.htm",
-      "date": "2026-08-28",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
-    },
-    {
       "title": "关于印发《会计师事务所职业责任保险实施办法》的通知",
       "url": "https://kjs.mof.gov.cn/zhengcefabu/202608/t20260827_3996207.htm",
       "date": "2026-08-27",
       "source": "kjs.mof.gov.cn",
       "column": "政策发布"
-    },
-    {
-      "title": "财政部、金融监管总局有关部门负责人就印发《会计师事务所职业责任保险实施办法》答记者问",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202608/t20260827_3996209.htm",
-      "date": "2026-08-27",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
-    },
-    {
-      "title": "贯彻落实新注册会计师法  推动注册会计师行业高质量发展 ——新注册会计师法系列解读之一",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202608/t20260820_3995860.htm",
-      "date": "2026-08-20",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
     },
     {
       "title": "会计准则委员会2025年度单位决算",
@@ -119,11 +70,11 @@
       "column": "政策发布"
     },
     {
-      "title": "财政部会计司有关负责人就修订印发《企业会计准则第30号——财务报表列报》答记者问",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202608/t20260805_3994932.htm",
+      "title": "财政部会计司有关负责人就修订印发《企业会计准则第30号—— 财务报表列报》答记者问",
+      "url": "https://www.casc.org.cn/2026/0805/284656.shtml",
       "date": "2026-08-05",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
+      "source": "www.casc.org.cn",
+      "column": "工作通知"
     },
     {
       "title": "财政部发布《2025年度企业会计准则实施情况分析报告》",
@@ -168,13 +119,6 @@
       "column": "工作通知"
     },
     {
-      "title": "财政部、中国证监会有关部门负责人就两家内地会计师事务所获准从事H股企业审计业务答记者问",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202605/t20260506_3989014.htm",
-      "date": "2026-05-06",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
-    },
-    {
       "title": "会计准则委员会2026年度单位预算",
       "url": "https://www.casc.org.cn/2026/0422/281689.shtml",
       "date": "2026-04-22",
@@ -215,13 +159,6 @@
       "date": "2026-02-06",
       "source": "www.casc.org.cn",
       "column": "企业会计准则"
-    },
-    {
-      "title": "财政部会计司有关负责人就开展2025年度行政事业单位内部控制评价和内部控制报告编报工作...",
-      "url": "https://kjs.mof.gov.cn/zhengcejiedu/202601/t20260129_3982851.htm",
-      "date": "2026-01-29",
-      "source": "kjs.mof.gov.cn",
-      "column": "政策解读"
     },
     {
       "title": "关于印发《可持续信息鉴证业务准则 第6101号——基本准则（试行）》的通知",
