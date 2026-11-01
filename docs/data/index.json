@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31 08:03:19",
+  "updated": "2026-11-01 08:49:15",
   "searches": {
     "tax_增值税": {
       "keyword": "增值税",
@@ -3564,7 +3564,7 @@
       "keyword": "研发费用 加计扣除",
       "type": "研发费用加计扣除",
       "scope": "fulltext",
-      "total": 507,
+      "total": 508,
       "results": [
         {
           "id": "ff808081729d1efe01729d50b5c500bf",
@@ -3842,7 +3842,7 @@
       "keyword": "虚开发票 风险",
       "type": "虚开发票风险",
       "scope": "fulltext",
-      "total": 197,
+      "total": 198,
       "results": [
         {
           "id": "1349e6aadd4947fe83ff811739825d3c",
@@ -4676,7 +4676,7 @@
       "keyword": "个人 专项附加扣除",
       "type": "专项附加扣除",
       "scope": "fulltext",
-      "total": 7323,
+      "total": 7327,
       "results": [
         {
           "id": "ff808181927b083b0195881cfb1458aa",
@@ -4954,7 +4954,7 @@
       "keyword": "金税四期 风险指标",
       "type": "金税四期风险",
       "scope": "fulltext",
-      "total": 1227,
+      "total": 1229,
       "results": [
         {
           "id": "ff808081729d1efe01729d50b5c500bf",

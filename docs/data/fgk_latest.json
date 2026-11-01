@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31 08:04:51",
+  "updated": "2026-11-01 08:50:07",
   "total": 200,
   "source": "fgk.chinatax.gov.cn",
   "results": [
@@ -70,7 +70,7 @@
       "document_number": "国家税务总局公告2026年第20号",
       "issuing_authority": "国家税务总局",
       "doc_type": "税务规范性文件",
-      "status": "尚未生效",
+      "status": "全文有效",
       "tax_categories": [
         "税费征管"
       ],
@@ -88,7 +88,7 @@
       "document_number": "国家税务总局公告2026年第19号",
       "issuing_authority": "国家税务总局",
       "doc_type": "税务规范性文件",
-      "status": "尚未生效",
+      "status": "全文有效",
       "tax_categories": [
         "税收政策",
         "增值税"
