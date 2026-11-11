@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10 09:21:46",
+  "updated": "2026-11-11 08:55:51",
   "searches": {
     "tax_增值税": {
       "keyword": "增值税",
@@ -283,7 +283,7 @@
       "keyword": "企业所得税",
       "type": "企业所得税",
       "scope": "title",
-      "total": 293,
+      "total": 294,
       "results": [
         {
           "id": "2c909fdd678bf17901678bf63c7c0343",
@@ -4676,7 +4676,7 @@
       "keyword": "个人 专项附加扣除",
       "type": "专项附加扣除",
       "scope": "fulltext",
-      "total": 7341,
+      "total": 7343,
       "results": [
         {
           "id": "ff808181927b083b0195881cfb1458aa",
@@ -4954,7 +4954,7 @@
       "keyword": "金税四期 风险指标",
       "type": "金税四期风险",
       "scope": "fulltext",
-      "total": 1230,
+      "total": 1231,
       "results": [
         {
           "id": "ff808081729d1efe01729d50b5c500bf",
