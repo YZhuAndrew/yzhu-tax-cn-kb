@@ -1,11 +1,18 @@
 {
-  "updated": "2026-11-13 09:11:43",
-  "total": 77,
+  "updated": "2026-11-14 08:41:50",
+  "total": 83,
   "sources": [
     "kjs.mof.gov.cn",
     "www.casc.org.cn"
   ],
   "results": [
+    {
+      "title": "关于就国际可持续准则理事会发布的《国际财务报告准则可持续披露实务公告第1号——自然相...",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202611/t20261109_4004283.htm",
+      "date": "2026-11-09",
+      "source": "kjs.mof.gov.cn",
+      "column": "工作通知"
+    },
     {
       "title": "关于就国际可持续准则理事会发布的《国际财务报告准则可持续披露实务公告第1号——自然相关披露（征求意见稿）》公开征...",
       "url": "https://www.casc.org.cn/2026/1109/287118.shtml",
@@ -29,9 +36,9 @@
     },
     {
       "title": "关于就国际会计准则理事会发布的金融工具准则实施后审议意见征询稿公开征求意见的函",
-      "url": "https://www.casc.org.cn/2026/1012/286386.shtml",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202610/t20261012_4002610.htm",
       "date": "2026-10-12",
-      "source": "www.casc.org.cn",
+      "source": "kjs.mof.gov.cn",
       "column": "工作通知"
     },
     {
@@ -42,10 +49,24 @@
       "column": "工作通知"
     },
     {
+      "title": "关于征求《行政事业单位内部控制规范（修订征求意见稿）》意见的函",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202610/t20261008_3998563.htm",
+      "date": "2026-10-08",
+      "source": "kjs.mof.gov.cn",
+      "column": "工作通知"
+    },
+    {
       "title": "关于征求《企业会计准则——会计科目和主要账务处理（修订征求意见稿）》意见的函",
-      "url": "https://www.casc.org.cn/2026/0930/286251.shtml",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202609/t20260930_3998445.htm",
       "date": "2026-09-30",
-      "source": "www.casc.org.cn",
+      "source": "kjs.mof.gov.cn",
+      "column": "工作通知"
+    },
+    {
+      "title": "关于征求《〈企业可持续披露准则第1号——气候（试行）〉应用指南（征求意见稿）》及电力...",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202609/t20260929_3998329.htm",
+      "date": "2026-09-29",
+      "source": "kjs.mof.gov.cn",
       "column": "工作通知"
     },
     {
@@ -54,6 +75,20 @@
       "date": "2026-09-24",
       "source": "kjs.mof.gov.cn",
       "column": "政策解读"
+    },
+    {
+      "title": "关于征求《财政部关于加快推进会计数智化工作的指导意见（征求意见稿）》意见的函",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202609/t20260921_3997874.htm",
+      "date": "2026-09-21",
+      "source": "kjs.mof.gov.cn",
+      "column": "工作通知"
+    },
+    {
+      "title": "2025年度会计师事务所从事证券服务业务有关信息",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202609/t20260920_3997803.htm",
+      "date": "2026-09-20",
+      "source": "kjs.mof.gov.cn",
+      "column": "工作通知"
     },
     {
       "title": "完善行业管理制度 持续强化注册会计师行业行政监管——新注册会计师法系列解读之四",
@@ -71,16 +106,23 @@
     },
     {
       "title": "关于征求《企业会计准则解释第22号（征求意见稿）》意见的函",
-      "url": "https://www.casc.org.cn/2026/0915/285890.shtml",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202609/t20260915_3997441.htm",
       "date": "2026-09-15",
-      "source": "www.casc.org.cn",
+      "source": "kjs.mof.gov.cn",
       "column": "工作通知"
     },
     {
       "title": "关于征求《企业会计准则解释第21号（征求意见稿）》意见的函",
-      "url": "https://www.casc.org.cn/2026/0915/285888.shtml",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202609/t20260915_3997440.htm",
       "date": "2026-09-15",
-      "source": "www.casc.org.cn",
+      "source": "kjs.mof.gov.cn",
+      "column": "工作通知"
+    },
+    {
+      "title": "从事证券服务业务会计师事务所注销备案名单",
+      "url": "https://kjs.mof.gov.cn/gongzuotongzhi/202609/t20260904_3996714.htm",
+      "date": "2026-09-04",
+      "source": "kjs.mof.gov.cn",
       "column": "工作通知"
     },
     {
