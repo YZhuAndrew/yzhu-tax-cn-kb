@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 08:52:54",
+  "updated": "2026-11-16 09:05:25",
   "searches": {
     "tax_增值税": {
       "keyword": "增值税",
@@ -934,7 +934,7 @@
         {
           "id": "4028abcc6127779301612855e0e6153e",
           "title": "北京市实施《中华人民共和国消费者权益保护法》办法",
-          "publish_date": null,
+          "publish_date": "1997-09-05",
           "effective_date": "1998-01-01",
           "status_code": 3,
           "issuing_authority": "北京市人民代表大会常务委员会",
@@ -1896,7 +1896,7 @@
       "keyword": "土地增值税",
       "type": "土地增值税",
       "scope": "title",
-      "total": 190,
+      "total": 189,
       "results": [
         {
           "id": "ff8080816f135f46016f2104531f1774",
@@ -4676,7 +4676,7 @@
       "keyword": "个人 专项附加扣除",
       "type": "专项附加扣除",
       "scope": "fulltext",
-      "total": 7344,
+      "total": 7343,
       "results": [
         {
           "id": "ff808181927b083b0195881cfb1458aa",
