@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 09:05:25",
+  "updated": "2026-11-17 10:17:36",
   "searches": {
     "tax_增值税": {
       "keyword": "增值税",
@@ -286,8 +286,8 @@
       "total": 294,
       "results": [
         {
-          "id": "2c909fdd678bf17901678bf63c7c0343",
-          "title": "中华人民共和国企业破产法",
+          "id": "2c909fdd678bf17901678bf63dce034d",
+          "title": "中华人民共和国合伙企业法",
           "publish_date": "2006-08-27",
           "effective_date": "2007-06-01",
           "status_code": 3,
@@ -295,8 +295,8 @@
           "category": "法律"
         },
         {
-          "id": "2c909fdd678bf17901678bf63dce034d",
-          "title": "中华人民共和国合伙企业法",
+          "id": "2c909fdd678bf17901678bf63c7c0343",
+          "title": "中华人民共和国企业破产法",
           "publish_date": "2006-08-27",
           "effective_date": "2007-06-01",
           "status_code": 3,
@@ -1236,21 +1236,21 @@
           "category": "地方法规"
         },
         {
-          "id": "4028abcc61277793016127fa61f03b2a",
-          "title": "鞍山市城市房产管理条例",
-          "publish_date": null,
-          "effective_date": null,
-          "status_code": 3,
-          "issuing_authority": "鞍山市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
           "id": "4028abcc612777930161285b56ea1aac",
           "title": "本溪市城市房产管理条例",
           "publish_date": null,
           "effective_date": null,
           "status_code": 3,
           "issuing_authority": "本溪市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127fa61f03b2a",
+          "title": "鞍山市城市房产管理条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "鞍山市人民代表大会常务委员会",
           "category": "地方法规"
         },
         {
@@ -3286,7 +3286,7 @@
       "keyword": "高新技术企业 企业所得税 优惠",
       "type": "高新技术企业优惠",
       "scope": "fulltext",
-      "total": 128,
+      "total": 49,
       "results": [
         {
           "id": "ff8080816f135f46016f2106acd11784",
@@ -3295,51 +3295,6 @@
           "effective_date": "2018-12-29",
           "status_code": 3,
           "issuing_authority": "全国人民代表大会",
-          "category": "法律"
-        },
-        {
-          "id": "ff80818179f5da5e0179f88beb640406",
-          "title": "中华人民共和国海南自由贸易港法",
-          "publish_date": "2021-06-10",
-          "effective_date": "2021-06-10",
-          "status_code": 3,
-          "issuing_authority": "全国人民代表大会常务委员会",
-          "category": "法律"
-        },
-        {
-          "id": "2c909fdd678bf17901678bf85eba0a23",
-          "title": "中华人民共和国中小企业促进法",
-          "publish_date": "2017-09-01",
-          "effective_date": "2018-01-01",
-          "status_code": 3,
-          "issuing_authority": "全国人民代表大会常务委员会",
-          "category": "法律"
-        },
-        {
-          "id": "2c909fdd678bf17901678bf5aae40069",
-          "title": "第五届全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议",
-          "publish_date": "1980-08-26",
-          "effective_date": "1980-08-26",
-          "status_code": 3,
-          "issuing_authority": "全国人民代表大会常务委员会",
-          "category": "法律"
-        },
-        {
-          "id": "ff8081818d6a4639018df3f1fc7e122d",
-          "title": "中华人民共和国慈善法",
-          "publish_date": "2023-12-29",
-          "effective_date": "2024-09-05",
-          "status_code": 3,
-          "issuing_authority": "全国人民代表大会",
-          "category": "法律"
-        },
-        {
-          "id": "2c909fdd678bf17901678bf608a7022b",
-          "title": "中华人民共和国公益事业捐赠法",
-          "publish_date": "1999-06-28",
-          "effective_date": "1999-09-01",
-          "status_code": 3,
-          "issuing_authority": "全国人民代表大会常务委员会",
           "category": "法律"
         },
         {
@@ -3352,42 +3307,6 @@
           "category": "行政法规"
         },
         {
-          "id": "ff8080816f3e9784016f424fe00c04e5",
-          "title": "劳动就业服务企业管理规定",
-          "publish_date": "1990-11-22",
-          "effective_date": null,
-          "status_code": 3,
-          "issuing_authority": "国务院",
-          "category": "行政法规"
-        },
-        {
-          "id": "ff8080816f3cbb3c016f415aee52231e",
-          "title": "国务院关于鼓励投资开发海南岛的规定",
-          "publish_date": "1988-05-04",
-          "effective_date": "1988-05-04",
-          "status_code": 3,
-          "issuing_authority": "国务院",
-          "category": "行政法规"
-        },
-        {
-          "id": "ff8080816f3cbb3c016f41348bc71d01",
-          "title": "国务院关于鼓励外商投资的规定",
-          "publish_date": "1986-10-11",
-          "effective_date": null,
-          "status_code": 3,
-          "issuing_authority": "国务院",
-          "category": "行政法规"
-        },
-        {
-          "id": "ff80818179f5d52f0179f8ce9aea01c8",
-          "title": "北京市院前医疗急救服务条例",
-          "publish_date": "2021-05-27",
-          "effective_date": "2021-05-27",
-          "status_code": 3,
-          "issuing_authority": "北京市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
           "id": "ff80808177e75f88017857a30dbe74ea",
           "title": "北京市促进中小企业发展条例",
           "publish_date": "2020-09-25",
@@ -3397,39 +3316,12 @@
           "category": "地方法规"
         },
         {
-          "id": "ff8080816eb1afb8016ebf5cf3514dca",
-          "title": "天津市就业促进条例",
-          "publish_date": "2018-12-14",
-          "effective_date": "2018-12-14",
-          "status_code": 3,
-          "issuing_authority": "天津市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
           "id": "ff8080816eea6bee016efcdd97223bbb",
           "title": "天津新技术产业园区管理条例",
           "publish_date": "2016-03-30",
           "effective_date": "2016-03-30",
           "status_code": 3,
           "issuing_authority": "天津市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
-          "id": "4028abcc61277793016127dcefbe1bb5",
-          "title": "天津市民办教育促进条例",
-          "publish_date": "2011-01-06",
-          "effective_date": null,
-          "status_code": 3,
-          "issuing_authority": "天津市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
-          "id": "ff808081752b7d4301756e26f62e3fa9",
-          "title": "廊坊市院前医疗急救服务条例",
-          "publish_date": "2020-10-12",
-          "effective_date": "2021-01-01",
-          "status_code": 3,
-          "issuing_authority": "廊坊市人民代表大会常务委员会",
           "category": "地方法规"
         },
         {
@@ -3451,39 +3343,12 @@
           "category": "地方法规"
         },
         {
-          "id": "ff80808177e757ac0177f73d9ced0ee6",
-          "title": "太原市医疗急救服务条例",
-          "publish_date": "2020-12-01",
-          "effective_date": "2021-01-01",
-          "status_code": 3,
-          "issuing_authority": "太原市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
-          "id": "ff808081774c72b3017766d414401145",
-          "title": "山西省气候资源开发利用和保护条例",
-          "publish_date": "2020-09-30",
-          "effective_date": "2020-09-30",
-          "status_code": 3,
-          "issuing_authority": "山西省人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
           "id": "4028abcc612777930161282d6f9470b0",
           "title": "山西省科技创新促进条例",
           "publish_date": "2017-09-29",
           "effective_date": "2017-12-01",
           "status_code": 3,
           "issuing_authority": "山西省人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
-          "id": "ff8080816ecb2302016ee9df1a4b7ce2",
-          "title": "内蒙古自治区中小企业促进条例",
-          "publish_date": "2019-09-26",
-          "effective_date": "2019-12-01",
-          "status_code": 3,
-          "issuing_authority": "内蒙古自治区人民代表大会常务委员会",
           "category": "地方法规"
         },
         {
@@ -3496,39 +3361,12 @@
           "category": "地方法规"
         },
         {
-          "id": "4028abcc6127779301612807eb3249ce",
-          "title": "辽宁省实施《中华人民共和国民族区域自治法》办法",
-          "publish_date": null,
-          "effective_date": null,
-          "status_code": 3,
-          "issuing_authority": "辽宁省人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
           "id": "ff808181927f1276019666e74504027e",
           "title": "吉林市科学技术进步条例",
           "publish_date": "2025-04-15",
           "effective_date": "2025-04-15",
           "status_code": 3,
           "issuing_authority": "吉林市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
-          "id": "ff808181927f1276019666a630757c52",
-          "title": "长春市促进中小企业发展条例",
-          "publish_date": "2025-04-03",
-          "effective_date": "2025-05-01",
-          "status_code": 3,
-          "issuing_authority": "长春市人民代表大会常务委员会",
-          "category": "地方法规"
-        },
-        {
-          "id": "ff8081818e750bc6018ef43f147e269e",
-          "title": "长春市优化营商环境条例",
-          "publish_date": "2024-04-02",
-          "effective_date": "2024-04-02",
-          "status_code": 3,
-          "issuing_authority": "长春市人民代表大会常务委员会",
           "category": "地方法规"
         },
         {
@@ -3556,6 +3394,168 @@
           "effective_date": "2025-12-01",
           "status_code": 3,
           "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808171e9e18101727e2e7c047dd7",
+          "title": "上海市推进科技创新中心建设条例",
+          "publish_date": "2020-01-20",
+          "effective_date": "2020-05-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161282857c76b28",
+          "title": "上海市促进科技成果转化条例",
+          "publish_date": "2017-04-20",
+          "effective_date": "2017-06-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817e00906b017e0a4274a424e0",
+          "title": "无锡市科技创新促进条例",
+          "publish_date": "2021-12-10",
+          "effective_date": "2022-02-01",
+          "status_code": 3,
+          "issuing_authority": "无锡市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127c84ec10931",
+          "title": "江苏省企业技术进步条例",
+          "publish_date": "2014-07-25",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818185e7f7ab018601d5457220c7",
+          "title": "浙江省促进中小微企业发展条例",
+          "publish_date": "2023-01-16",
+          "effective_date": "2023-03-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816fbc57c10170c77600aa6619",
+          "title": "舟山市科技创新促进条例",
+          "publish_date": "2019-12-13",
+          "effective_date": "2020-03-01",
+          "status_code": 3,
+          "issuing_authority": "舟山市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5bb65c68cfd0166f0bc7ab7124d",
+          "title": "安徽省促进科技成果转化条例",
+          "publish_date": "2018-09-30",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612828a5546b73",
+          "title": "福建省促进科技成果转化条例",
+          "publish_date": "2017-11-24",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "福建省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016128657a262458",
+          "title": "福清融侨经济技术开发区条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "福州市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819b697220019bc4de32681496",
+          "title": "江西省专利促进条例",
+          "publish_date": "2025-11-26",
+          "effective_date": "2025-12-01",
+          "status_code": 3,
+          "issuing_authority": "江西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818198a7ecd40198f58517892869",
+          "title": "烟台市科技创新促进条例",
+          "publish_date": "2025-08-01",
+          "effective_date": "2025-09-01",
+          "status_code": 3,
+          "issuing_authority": "烟台市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f09310192c27f139b6d81",
+          "title": "青岛市科技创新促进条例",
+          "publish_date": "2024-09-26",
+          "effective_date": "2024-11-01",
+          "status_code": 3,
+          "issuing_authority": "青岛市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818e750bc6018f048d30f052f2",
+          "title": "山东省科学技术进步条例",
+          "publish_date": "2024-03-27",
+          "effective_date": "2024-05-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127e3e6a922ee",
+          "title": "济南高新技术产业开发区条例",
+          "publish_date": "2003-01-12",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "济南市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181857bbb760185944e390b29ce",
+          "title": "河南省创新驱动高质量发展条例",
+          "publish_date": "2022-11-26",
+          "effective_date": "2023-01-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181857bbb76018594c90d542c33",
+          "title": "郑州航空港经济综合实验区条例",
+          "publish_date": "2022-11-26",
+          "effective_date": "2022-11-26",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127d883b11777",
+          "title": "河南省促进高新技术产业发展条例",
+          "publish_date": "2011-06-13",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181915044450191550c2c2207ff",
+          "title": "广东省科技创新条例",
+          "publish_date": "2024-07-31",
+          "effective_date": "2024-10-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
           "category": "地方法规"
         }
       ]
@@ -4676,7 +4676,7 @@
       "keyword": "个人 专项附加扣除",
       "type": "专项附加扣除",
       "scope": "fulltext",
-      "total": 7343,
+      "total": 7344,
       "results": [
         {
           "id": "ff808181927b083b0195881cfb1458aa",
