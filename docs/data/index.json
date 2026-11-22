@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21 09:16:55",
+  "updated": "2026-11-22 09:26:17",
   "searches": {
     "tax_增值税": {
       "keyword": "增值税",
@@ -277,8 +277,7 @@
           "issuing_authority": "新疆维吾尔自治区人大常务委员会",
           "category": "地方法规"
         }
-      ],
-      "reused": true
+      ]
     },
     "tax_企业所得税": {
       "keyword": "企业所得税",
