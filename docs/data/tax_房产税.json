@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 10:35:23",
+  "updated": "2026-11-28 09:52:26",
   "keyword": "房产税",
   "type": "房产税",
   "scope": "title",
@@ -105,21 +105,21 @@
       "category": "地方法规"
     },
     {
-      "id": "4028abcc612777930161285b56ea1aac",
-      "title": "本溪市城市房产管理条例",
-      "publish_date": null,
-      "effective_date": null,
-      "status_code": 3,
-      "issuing_authority": "本溪市人民代表大会常务委员会",
-      "category": "地方法规"
-    },
-    {
       "id": "4028abcc61277793016127fa61f03b2a",
       "title": "鞍山市城市房产管理条例",
       "publish_date": null,
       "effective_date": null,
       "status_code": 3,
       "issuing_authority": "鞍山市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "4028abcc612777930161285b56ea1aac",
+      "title": "本溪市城市房产管理条例",
+      "publish_date": null,
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "本溪市人民代表大会常务委员会",
       "category": "地方法规"
     },
     {
